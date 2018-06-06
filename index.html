@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--grupo CSS -->
+ 
+ <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+ <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+ <link rel="stylesheet" href="css/tema-app5.min.css"/>
+    
+    <link rel="stylesheet" href="css/sldr.css">
+
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"</script>
+    <script src="js/jsplug.js"></script>
+    <script src ="phonegap.js"></script>
+    <script type="text/javascript">
+	
+	
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+    </script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/CN_Blog_HTML5_25-06-16.jpg','imagenes/etiquetasSCierre.PNG','imagenes/images.jfif','imagenes/css2.jpg','imagenes/wampserver-logo.png','imagenes/js2.jpg','imagenes/php2.jpg')">
+    <div data-role="page" id="principal">
+        <div data-role="header" class="ui-content">
+            <h1>Diseña Aplicaciones Web</h1>
+        </div>
+        <div role="main" class="ui-content">
+            <center>
+                <div class="sldr">
+                    <ul>
+                        <li><img src="imagenes/sldr_html.png" alt="sldr"></li>
+                        <li><img src="imagenes/sldr_html5.jpg" alt="sldr2"></li>
+                        <li><img src="imagenes/sldr_etiquetas.jfif" alt="sldr3"></li>
+                        <li><img src="imagenes/sldr_css.jfif" alt="sldr4"></li>
+                        <li><img src="imagenes/sldr_Dreamweaver.jpg" alt="sldr5"></li>
+                        <li><img src="imagenes/sldr_WampServer.png" alt="sldr6"></li>
+                        <li><img src="imagenes/sldr_js.png" alt="sldr7"></li>
+                        <li><img src="imagenes/sldr_php.jfif" alt="sldr8"></li>
+                    </ul>
+                </div>
+            </center>
+            <div data-role="collapsible" data-theme="b">
+                <h2>Elige un tema</h2>
+                <ul data-role="listview">
+                    <li><a href="#Pagina1">HTML</a></li>
+                    <li><a href="#Pagina2">Etiquetas</a></li>
+                    <li><a href="#Pagina3">HTML5</a></li>
+                    <li><a href="#Pagina4">CSS</a></li>
+                    <li><a href="#Pagina5">DREAMWEAVER</a></li>
+                    <li><a href="#Pagina6">WAMP</a></li>
+                    <li><a href="#Pagina7">JS</a></li>
+                    <li><a href="#Pagina8">PHP</a></li>
+                    <li><a href="#Pagina9">MySQL</a></li>
+                    <li><a href="#Pagina10">Editor de contenido</a></li>
+                </ul>
+            </div>
+                <div data-role="collapsible" data-theme="a" data-content="b">
+                    <h2>Información Alumno</h2>
+                    <p>Nombre Alumno: Joquebeth Silam Cruz Armenta</p>
+                    <p>Grupo: 4"F"</p>
+                    <p>Semestre: 4to</p>
+                    <p>Submodulo: Desarrolla Aplicaciones Moviles</p>
+                    <p>Nombre del Docente: José Antonio Gómez Hernandez</p>
+                </div>
+        </div>
+        <div data-role="footer">
+            <h4>Proyecto,JSCA</h4>
+            <center><img style="width: 2%" src="imagenes/Html-tags-icon.png" alt=""></center>
+        </div>
+    </div>
+    <div data-role="page" id="Pagina1">
+    	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c" class="ui-alt-icon">
+    		<h1>HTML</h1>
+    	</div>
+    	<div role="main" class="ui-content">
+    		<div data-role="collapsible" data-theme="a">
+    			<h2>Información</h2>
+    			<p>HTML, que significa Lenguaje de Marcado para Hipertextos (HyperText Markup Language) es el elemento de construcción más básico de una página web y se usa para crear y representar visualmente una página web. Determina el contenido de la página web, pero no su funcionalidad. Otras tecnologías distintas de HTML son usadas generalmente para describir la apariencia/presentación de una página web (CSS) o su funcionalidad (JavaScript). </p>
+    			<center>
+    			  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image18','','imagenes/images.jfif',1)"><img src="imagenes/html_sust.png" alt="" width="300" height="168" id="Image18"></a>
+    			</center>
+    		</div>
+    		<center><div data-role="controlgroup" style="width: 30%"><a href="https://www.w3schools.com/Html/" style="text-decoration: none"><input type="button" class="ui-btn-a" value="Conoce más"></a></div></center>
+    	</div>
+    	<div data-role="footer">
+    		<h4>Proyecto,JSCA</h4>
+    		 <center><img style="width: 2%" src="imagenes/Html-tags-icon.png" alt=""></center>
+    	</div>
+    </div>
+        <div data-role="page" id="Pagina2">
+    	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c" class="ui-alt-icon">
+    		<h1>ETIQUETAS</h1>
+    	</div>
+    	<div role="main" class="ui-content">
+    		<div data-role="collapsible" data-theme="a">
+    			<h2>Información</h2>
+    			<p>Las etiquetas HTML son fragmentos de texto rodeados por corchetes angulares < >, que tienen funciones y usos específicos y se utilizan para escribir código HTML.Las etiquetas o tags son la forma de escribir código HTML.</p>
+    			<br>
+    			<p>Las etiquetas se pueden dividir en dos categorias como lo son:</p>
+    			<center>
+    			  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image20','','imagenes/etiquetasSCierre.PNG',1)"><img src="imagenes/etiquetasCierre.PNG" alt="" width="177" height="175" id="Image20"></a>
+    			</center>
+			</div>
+               	<center>
+               	<h2>Ejemplos</h2>
+					<div class="sldr">
+						<ul>
+							<li><img src="imagenes/etiquetas1.PNG" ></li>
+							<li><img src="imagenes/etiquetas2.PNG" ></li>
+							<li><img src="imagenes/etiquetas3.PNG" ></li>
+							<li><img src="imagenes/etiquetas4.PNG"></li>
+							<li><img src="imagenes/etiquetas5.PNG" ></li>
+							<li><img src="imagenes/etiquetas6.PNG" ></li>
+							<li><img src="imagenes/etiquetas7.PNG" ></li>
+							<li><img src="imagenes/etiquetas8.PNG"></li>
+						</ul>
+					</div>
+            	</center>
+    		<center><div data-role="controlgroup" style="width: 30%"><a href="https://developer.mozilla.org/es/docs/HTML/HTML5/HTML5_lista_elementos" style="text-decoration: none"><input type="button" class="ui-btn-a" value="Conoce más"></a></div></center>
+    	</div>
+    	<div data-role="footer">
+    		<h4>Proyecto,JSCA</h4>
+    		 <center><img style="width: 2%" src="imagenes/Html-tags-icon.png" alt=""></center>
+    	</div>
+    </div>
+<div data-role="page" id="Pagina3">
+    	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c" class="ui-alt-icon">
+    		<h1>HTML5</h1>
+    	</div>
+    	<div role="main" class="ui-content">
+    		<div data-role="collapsible" data-theme="a">
+    			<h2>Información</h2>
+    			<p>HTML5  es la última versión de HTML. El término representa dos conceptos diferentes:</p>
+    			<ul>
+    				<li>Se trata de una nueva versión de HTML, con nuevos elementos, atributos y comportamientos.</li>
+    				<li>Contiene un conjunto más amplio de tecnologías que permite a los sitios Web y a las aplicaciones ser más diversas y de gran alcance. A este conjunto se le llama HTML5 y amigos, a menudo reducido a HTML5 .</li>
+    			</ul>
+    			<center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image19','','imagenes/CN_Blog_HTML5_25-06-16.jpg',1)"><img src="imagenes/html5.jfif" alt="" width="287" height="175" id="Image19"></a></center>
+    		</div>
+    		<center><div data-role="controlgroup" style="width: 30%"><a href="https://www.w3schools.com/html/html5_intro.asp" style="text-decoration: none"><input type="button" class="ui-btn-a" value="Conoce más"></a></div></center>
+    	</div>
+    	<div data-role="footer">
+    		<h4>Proyecto,JSCA</h4>
+    		 <center><img style="width: 2%" src="imagenes/Html-tags-icon.png" alt=""></center>
+    	</div>
+    </div>
+<div data-role="page" id="Pagina4">
+    	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c" class="ui-alt-icon">
+    		<h1>CSS</h1>
+    	</div>
+    	<div role="main">
+    		<div data-role="collapsible" data-theme="a">
+    			<h2>Información</h2>
+    			<p>Hojas de Estilo en Cascada (del inglés Cascading Style Sheets) o CSS es el lenguaje utilizado para describir la presentación de documentos HTML o XML, esto incluye varios lenguajes basados en XML como son XHTML o SVG. CSS describe como debe ser renderizado el elemento estructurado en pantalla, en papel, hablado o en otros medios.</p>
+    			<center>
+    			  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image21','','imagenes/css2.jpg',1)"><img src="imagenes/css1.jfif" alt="" width="311" height="162" id="Image21"></a>
+    			</center>
+    		</div>
+    		<center><div data-role="controlgroup" style="width: 30%"><a href="https://www.w3schools.com/Css/" style="text-decoration: none"><input type="button" class="ui-btn-a" value="Conoce más"></a></div></center>
+    	</div>
+    	<div data-role="footer">
+    		<h4>Proyecto,JSCA</h4>
+    		 <center><img style="width: 2%" src="imagenes/Html-tags-icon.png" alt=""></center>
+    	</div>
+    </div>
+<div data-role="page" id="Pagina5">
+    	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c" class="ui-alt-icon">
+    		<h1>DREAMWEAVER</h1>
+    	</div>
+    	<div role="main" class="ui-content">
+    		<div data-role="collapsible" data-theme="a">
+    			<h2>Información</h2>
+    			<p>Adobe Dreamweaver es una aplicación en programa de estudio (basada en la forma de estudio de Adobe Flash) que está destinada a la construcción, diseño y edición de sitios, vídeos y aplicaciones Web basados en estándares. Creado inicialmente por Macromedia (actualmente producido por Adobe Systems) es uno de los programas más utilizados en el sector del diseño y la programación web por sus funcionalidades, su integración con otras herramientas como Adobe Flash y, recientemente, por su soporte de los estándares del World Wide Web Consortium.</p>
+    			<center>
+    			  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image22','','imagenes/dream1.jpg',1)"><img src="imagenes/dream2.jpg" alt="" width="470" height="470" id="Image22"></a>
+                </center>
+    		</div>
+    		<center><div data-role="controlgroup" style="width: 30%"><a href="https://www.adobe.com/mx/products/dreamweaver/free-trial-download.html" style="text-decoration: none"><input type="button" class="ui-btn-a" value="Descarga Gratis"></a></div></center>
+    	</div>
+    	<div data-role="footer">
+    		<h4>Proyecto,JSCA</h4>
+    		 <center><img style="width: 2%" src="imagenes/Html-tags-icon.png" alt=""></center>
+    	</div>
+    </div>
+<div data-role="page" id="Pagina6">
+    	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c" class="ui-alt-icon">
+    		<h1>WAMP</h1>
+    	</div>
+    	<div role="main" class="ui-content">
+    		<div data-role="collapsible" data-theme="a">
+    			<h2>Información</h2>
+    			<p>WAMP es el acrónimo usado para describir un sistema de infraestructura de internet que usa las siguientes herramientas:
+    			<ul>
+					<li>Windows, como sistema operativo</li>
+
+					<li>Apache, como servidor web</li>
+
+					<li>MySQL, como gestor de bases de datos</li>
+
+					<li>PHP (generalmente), Perl, o Python, como lenguajes de programación.</li>
+
+					<li>El uso de un WAMP permite servir páginas HTML a internet, además de poder gestionar datos en ellas, al mismo tiempo un WAMP, proporciona lenguajes de programación para desarrollar aplicaciones web.</li>
+				</ul>
+   				</p>
+    			<center>
+           		  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image23','','imagenes/wampserver-logo.png',1)"><img src="imagenes/sldr_WampServer.png" alt="" width="645" height="645" id="Image23"></a>
+                </center>
+    		</div>
+    		<center><div data-role="controlgroup" style="width: 30%"><a href="http://www.wampserver.com/en/" style="text-decoration: none"><input type="button" class="ui-btn-a" value="Descarga Gratis"></a></div></center>
+    	</div>
+    	<div data-role="footer">
+    		<h4>Proyecto,JSCA</h4>
+    		 <center><img style="width: 2%" src="imagenes/Html-tags-icon.png" alt=""></center>
+    	</div>
+    </div>
+<div data-role="page" id="Pagina7">
+    	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c" class="ui-alt-icon">
+    		<h1>JS</h1>
+    	</div>
+    	<div role="main" class="ui-content">
+    		<div data-role="collapsible" data-theme="a">
+    			<h2>Información</h2>
+    			<p>Un archivo *.js, es un archivo de texto plano que contiene scripts de Javascript, y que puede, por tanto, ser modificado con cualquier editor de textos. Es ejecutado generalmente por un navegador web.
+
+				Los archivos .js guardan funciones y variables globales que se ejecutarán en la página web pudiendo llamar a sus funciones desde cualquier subpágina sin tener que incrustar scripts en cada una de ellas y ahorrando así código. Para quien tenga idea de construcción de páginas web, podría decirse que es similar a un archivo CSS pero en lugar de clases y estilos este archivo genera scripts.</p>
+    			<center>
+           		  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image24','','imagenes/js2.jpg',1)"><img src="imagenes/js1.png" alt="" width="340" height="148" id="Image24"></a>
+                </center>
+    		</div>
+    		<center><div data-role="controlgroup" style="width: 30%"><a href="https://www.w3schools.com/jS/default.asp" style="text-decoration: none"><input type="button" class="ui-btn-a" value="Conoce más"></a></div></center>
+    	</div>
+    	<div data-role="footer">
+    		<h4>Proyecto,JSCA</h4>
+    		 <center><img style="width: 2%" src="imagenes/Html-tags-icon.png" alt=""></center>
+    	</div>
+    </div>
+<div data-role="page" id="Pagina8">
+    	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c" class="ui-alt-icon">
+    		<h1>PHP</h1>
+    	</div>
+    	<div role="main" class="ui-content">
+    		<div data-role="collapsible" data-theme="a">
+    			<h2>Información</h2>
+    			<p>PHP, acrónimo recursivo en inglés de PHP Hypertext Preprocessor (procesador de hipertexto), es un lenguaje de programación de propósito general de código del lado del servidor originalmente diseñado para el desarrollo web de contenido dinámico. Fue uno de los primeros lenguajes de programación del lado del servidor que se podían incorporar directamente en un documento HTML en lugar, de llamar a un archivo externo que procese los datos. El código es interpretado por un servidor web con un módulo de procesador de PHP que genera el HTML resultante</p>
+    			<center>
+           		  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image25','','imagenes/php2.jpg',1)"><img src="imagenes/php1.jpg" alt="" width="716" height="474" id="Image25"></a>
+                </center>
+    		</div>
+    		<center><div data-role="controlgroup" style="width: 30%"><a href="https://www.w3schools.com/pHP/default.asp" style="text-decoration: none"><input type="button" class="ui-btn-a" value="Conoce más"></a></div></center>
+    	</div>
+    	<div data-role="footer">
+    		<h4>Proyecto,JSCA</h4>
+    		 <center><img style="width: 2%" src="imagenes/Html-tags-icon.png" alt=""></center>
+    	</div>
+    </div>
+    <div data-role="page" id="Pagina9">
+    	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c" class="ui-alt-icon">
+    		<h1>MYSQL</h1>
+    	</div>
+    	<div role="main" class="ui-content">
+    		<div data-role="collapsible" data-theme="a">
+    			<h2>Información</h2>
+    			<p>MySQL es un sistema de gestión de bases de datos relacional desarrollado bajo licencia dual: Licencia pública general/Licencia comercial por Oracle Corporation y está considerada como la base datos de código abierto más popular del mundo, y una de las más populares en general junto a Oracle y Microsoft SQL Server, sobre todo para entornos de desarrollo web.</p>
+    			<center>
+           		  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image26','','imagenes/mysql2.svg',1)"><img src="imagenes/mysql1.png" alt="" width="500" height="450" id="Image26"></a>
+                </center>
+    		</div>
+    		<center><div data-role="controlgroup" style="width: 30%"><a href="https://www.w3schools.com/php/php_mysql_intro.asp" style="text-decoration: none"><input type="button" class="ui-btn-a" value="Conoce más"></a></div></center>
+    	</div>
+    	<div data-role="footer">
+    		<h4>Proyecto,JSCA</h4>
+    		 <center><img style="width: 2%" src="imagenes/Html-tags-icon.png" alt=""></center>
+    	</div>
+    </div>
+        <div data-role="page" id="Pagina10">
+    	<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="c" class="ui-alt-icon">
+    		<h1>Editores de Contenido</h1>
+    	</div>
+    	<div role="main" class="ui-content">
+    		<div data-role="collapsible" data-theme="a">
+    			<h2>Información</h2>
+    			<p>Los editores de HTML pueden ser de dos tipos clasificados como editores de texto,algunos ejemplos de editores de texto son: Notepad++,home site,ultra edit y arachnophilia.Por otra parte tenemos a los editores en modo diseño como lo son Dreamweaver,Jompozer y Frontpage.
+    			</p>
+    			
+    			<center>
+           		  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image27','','imagenes/notepad++.jfif',1)"><img src="imagenes/dream2.jpg" alt="" width="470" height="470" id="Image27"></a>
+                </center>
+    		</div>
+    		<center><div data-role="controlgroup" style="width: 30%"><a href="http://html.conclase.net/recursos/editores" style="text-decoration: none"><input type="button" class="ui-btn-a" value="Conoce más"></a></div></center>
+    	</div>
+    	<div data-role="footer">
+    		<h4>Proyecto,JSCA</h4>
+    		 <center><img style="width: 2%" src="imagenes/Html-tags-icon.png" alt=""></center>
+    	</div>
+    </div>
+</body>
+</html>

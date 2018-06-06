@@ -1,0 +1,32 @@
+.sldr{
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+}
+.sldr ul{
+    display: flex;
+    padding: 0;
+    width: 800%;
+    animation: cambio 60s infinite;
+}
+.sldr li{
+    list-style: none;
+     width: 80%;
+}
+.sldr img{
+    width: 100%;
+}
+.sldr img:hover{
+    transform: scale(1.2);
+    transition: all 300ms;
+}
+@keyframes cambio{
+    0%{margin-left:0;}
+    10%{margin-left: -100%;}
+    15%{margin-left: -200%;}
+    20%{margin-left: -300%;}
+    25%{margin-left: -400%;}
+    30%{margin-left: -500%;}
+    35%{margin-left: -600%;}
+    40%{margin-left: -700%;}
+}
